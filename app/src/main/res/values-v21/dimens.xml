@@ -1,0 +1,5 @@
+<resources>
+    <!-- 为了给5.0的手机做适配,因为5.0的手机tool_bar_top_padding为24. -->
+
+    <dimen name="tool_bar_top_padding">24dp</dimen>
+</resources>

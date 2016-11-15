@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xiaohong.bilibilivideo.activitys.VideoDetailActivity">
+
+    <LinearLayout
+        android:id="@+id/video_detail_controller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#9999"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/video_detail_controller_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_media_play"
+            />
+
+        <SeekBar
+            android:id="@+id/video_detail_controller_progress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/video_detail_controller_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="03:00"/>
+
+        <ImageView
+            android:id="@+id/video_detail_controller_orientation_switch"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_erro"/>
+    </LinearLayout>
+
+    <SurfaceView
+        android:id="@+id/video_detail_play_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</FrameLayout>
+
+

@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="toolbarStyle">@style/contentInsetStartStyle</item>
+        <!--允许代码设置背景颜色-->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!--设置stateBar透明,如果要让他有时透明 有时不透明, 就要去掉下面这句话-->
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+    </style>
+
+    <style name="Theme.ToolBar.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="actionMenuTextColor">#fff</item>
+    </style>
+
+    <!--首页 推荐 Fragment 中 推荐  直播列表条目CardView样式-->
+    <style name="RecommendItemCard">
+        <!--所有的第三方属性, 或这 app: 开头的属性, 不要包含 app: 前缀-->
+        <item name="layout_columnWeight">1</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardCornerRadius">3dp</item>
+        <item name="cardElevation">2dp</item>
+    </style>
+
+    <style name="RecommendItemBodyIcon">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/img_tips_error_banner_tv</item>
+       <item name="android:layout_width">match_parent</item>
+    </style>
+
+      <style name="RecommendItemBodyTxt">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!--fragment_video_introduction 布局中 四个花式图片的style-->
+    <style name="VideoIntroducationImage">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@drawable/ic_daily_video_action_bg</item>
+    </style>
+
+    <!--fragment_video_introduction 布局中 四个花式图片的最外层Linear的style-->
+    <style name="VideoIntroducationLinear">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="contentInsetStartStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+    </style>
+</resources>

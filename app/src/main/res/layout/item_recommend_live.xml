@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/item_recommend_live_on_live"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            tools:text="正在...."
+            android:layout_height="wrap_content"/>
+        <TextView
+            tools:text="当前有"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/item_recommend_live_more_live"
+            tools:text="1000"
+            android:textColor="@color/colorDrawerNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            tools:text="个直播>"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!--用GirldLayout实现有几行-->
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:columnCount="2">
+        <!--用CardView实现带有效果的卡片类似的展示-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/item_commend_card_view_live_0"
+            style="@style/RecommendItemCard">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <ImageView
+                   android:id="@+id/item_commend_body_live_icon_0"
+                   style="@style/RecommendItemBodyIcon"
+                   />
+               <TextView
+                   android:id="@+id/item_commend_body_live_title_0"
+                   style="@style/RecommendItemBodyTxt"
+                   tools:text="标题"/>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+
+                   android:padding="3dp"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:id="@+id/item_commend_body_live_up_0"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       tools:text="深夫人"/>
+
+                   <ImageView
+                       android:src="@drawable/ic_watching"
+                       android:layout_marginRight="3dp"
+                       android:layout_width="20dp"
+                       android:layout_height="20dp"
+                       android:id="@+id/imageView"/>
+
+                   <TextView
+                       android:id="@+id/item_commend_body_live_online_0"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       tools:text="1000"/>
+
+               </LinearLayout>
+
+           </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/item_commend_card_view_live_1"
+            style="@style/RecommendItemCard"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/item_commend_body_live_icon_1"
+                                   style="@style/RecommendItemBodyIcon"
+                    />
+                <TextView
+                    android:id="@+id/item_commend_body_live_title_1"
+                    style="@style/RecommendItemBodyTxt"
+                    tools:text="标题"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/item_commend_body_live_up_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        tools:text="深夫人"/>
+                    <ImageView
+                        android:src="@drawable/ic_watching"
+                        android:layout_marginRight="3dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <TextView
+                        android:id="@+id/item_commend_body_live_online_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="1000"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/item_commend_card_view_live_2"
+            style="@style/RecommendItemCard">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/item_commend_body_live_icon_2"
+                                 style="@style/RecommendItemBodyIcon"
+                    />
+
+                <TextView
+                    android:id="@+id/item_commend_body_live_title_2"
+                    style="@style/RecommendItemBodyTxt"
+                    tools:text="标题"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/item_commend_body_live_up_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        tools:text="深夫人"/>
+                    <ImageView
+                        android:src="@drawable/ic_watching"
+                        android:layout_marginRight="3dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <TextView
+                        android:id="@+id/item_commend_body_live_online_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="1000"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/item_commend_card_view_live_3"
+            style="@style/RecommendItemCard"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/item_commend_body_live_icon_3"
+                    style="@style/RecommendItemBodyIcon"
+                    />
+                <TextView
+                    android:id="@+id/item_commend_body_live_title_3"
+                    style="@style/RecommendItemBodyTxt"
+                    tools:text="标题"
+                   />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/item_commend_body_live_up_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        tools:text="深夫人"/>
+                    <ImageView
+                        android:src="@drawable/ic_watching"
+                        android:layout_marginRight="3dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <TextView
+                        android:id="@+id/item_commend_body_live_online_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="1000"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </android.support.v7.widget.GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="查看更多"
+            android:id="@+id/item_recommend_live_bottom_search_more"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="10条新动态,点击刷新"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:src="@drawable/ic_category_more_refresh"
+            android:id="@+id/item_recommend_live_bottom_refresh"
+            android:layout_gravity="end"
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
